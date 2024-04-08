@@ -6,6 +6,7 @@ class ApiServer{
   const url = "/server" + path;
   const options: RequestInit = {
     method,
+    mode: "cors",
     headers: {
       "Content-Type": "application/json;charset=utf-8",
       Authorization: `Bearer ${token}`,
